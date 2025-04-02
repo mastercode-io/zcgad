@@ -109,6 +109,7 @@ GAd.prototype.s_Hid=function()
 	}
 
 	console.log("is_set: ", is_set);
+	concole.log("DEBUG");
 	console.log("p", p);
 	if (!is_set) {
 		// <script type="text/javascript" src='<protocol>://crm.zoho.com/crm/javascript/zcga.js' name='zcga' id='zcga' zcga_element_name="<replace_tp_webform_name>"></script> 
