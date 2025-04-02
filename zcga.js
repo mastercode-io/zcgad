@@ -1,5 +1,5 @@
 //$Id$
-console.log("Updated ZC GAD handler");
+console.log("New Updated ZC GAD handler");
 function getValue(p_n, ix)
 {
 	var q_s = '';
