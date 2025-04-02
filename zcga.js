@@ -1,5 +1,5 @@
 //$Id$
-console.log("Uodated ZC GAD handler");
+console.log("Updated ZC GAD handler");
 function getValue(p_n, ix)
 {
 	var q_s = '';
@@ -107,11 +107,13 @@ GAd.prototype.s_Hid=function()
 		}
 		
 	}
-	
+
+	console.log("is_set: ", is_set);
 	if (!is_set) {
 		// <script type="text/javascript" src='<protocol>://crm.zoho.com/crm/javascript/zcga.js' name='zcga' id='zcga' zcga_element_name="<replace_tp_webform_name>"></script> 
 		// Hidden element name might be different from third party form and not being editable.
 		var zcga_script_elem = document.getElementsByName("zcga");
+		console.log(zcga_script_elem);
 		if (zcga_script_elem && zcga_script_elem.length == 1) {
 			var zcga_hidEl_name = zcga_script_elem[0].getAttribute('zcga_element_name');
 			if (zcga_hidEl_name) {
