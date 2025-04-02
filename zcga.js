@@ -67,6 +67,8 @@ GAd.prototype.initialize=function()
 }
 GAd.prototype.s_Hid=function()
 {
+	console.log("GAD", GAd.indexValueArr);
+	console.log("g_c", g_c(GAd.indexValueArr[0]));
 	var is_set = false;
 	var all_Frm = document.forms;
     	for( var i = 0; i < all_Frm.length; i++ ) 
