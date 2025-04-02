@@ -109,6 +109,7 @@ GAd.prototype.s_Hid=function()
 	}
 
 	console.log("is_set: ", is_set);
+	console.log("p", p);
 	if (!is_set) {
 		// <script type="text/javascript" src='<protocol>://crm.zoho.com/crm/javascript/zcga.js' name='zcga' id='zcga' zcga_element_name="<replace_tp_webform_name>"></script> 
 		// Hidden element name might be different from third party form and not being editable.
@@ -116,8 +117,10 @@ GAd.prototype.s_Hid=function()
 		console.log(zcga_script_elem);
 		if (zcga_script_elem && zcga_script_elem.length == 1) {
 			var zcga_hidEl_name = zcga_script_elem[0].getAttribute('zcga_element_name');
+			console.log("el name", zcga_hidEl_name);
 			if (zcga_hidEl_name) {
 				var hidEl = document.getElementsByName(zcga_hidEl_name);
+				console.log("hidEl", hidEl);
 				if (hidEl && hidEl.length > 0) {
 					var p = g_c(GAd.indexValueArr[0]);
 					for (var idx = 0; idx < hidEl.length ; idx++) {
